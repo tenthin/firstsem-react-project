@@ -16,7 +16,7 @@ jobs:
 
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: .  # Use root directory if README.md is in the root
+          input_dir: docs  # Use root directory if README.md is in the root
           output_dir: pdfs
           images_dir: docs/images  # Adjust if needed
           image_import: ./images

@@ -1,3 +1,5 @@
+
+
 name: Docs to PDF
 # This workflow is triggered on pushes to the repository.
 on:
@@ -19,12 +21,6 @@ jobs:
           images_dir: docs/images  # Adjust if needed
           image_import: ./images
           build_html: false
-
-      - name: List files in pdfs directory
-        run: |
-          echo "Listing files in pdfs directory:"
-          ls -l pdfs
-
       - uses: actions/upload-artifact@v3
         with:
           name: docs
@@ -48,14 +44,6 @@ jobs:
         run: |
           echo "Listing downloaded files:"
           find ./downloaded_docs -type f
-
-      - name: Check if README.pdf exists
-        run: |
-          if [ -f ./downloaded_docs/README.pdf ]; then
-            echo "README.pdf exists."
-          else
-            echo "README.pdf not found."
-          fi
 
       - name: Generate random tag name
         id: generate_tag

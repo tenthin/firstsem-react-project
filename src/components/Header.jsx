@@ -7,7 +7,9 @@ const Header = () => {
     <div className='container'>
       <header>
         <div className="header-logo">
-          <img src="./assests/desktop-header-logo.png" alt="Logo" />
+          <Link to="/home">
+            <img src={`${process.env.PUBLIC_URL}/assests/desktop-header-logo.png`} alt="Logo" />
+          </Link>
         </div>
         <nav>
           <ul>

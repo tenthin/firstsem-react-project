@@ -30,24 +30,21 @@ const Home = () => {
       <section className="homeProject">
         <h2>MY PROJECT</h2>
         <div className="projectSection">
-                <div className="card">
-                    <img src="./img/project-1.png" alt="img"/>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora deserunt officia praesentium
-                        illo
-                        amet magni cumque id saepe porro beatae!</p>
-                </div>
-                <div className="card">
-                    <img src="./img/project-2.png" alt="img"/>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora deserunt officia praesentium
-                        illo
-                        amet magni cumque id saepe porro beatae!</p>
-                </div>
-                <div className="card">
-                    <img src="./img/project-3.png" alt="img"/>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora deserunt officia praesentium
-                        illo
-                        amet magni cumque id saepe porro beatae!</p>
-                </div>
+        <div class="card">
+                        <img src={`${process.env.PUBLIC_URL}/assests/project-1.png`} alt="img" />
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora deserunt officia praesentium illo
+                            amet magni cumque id saepe porro beatae!</p>
+                    </div>
+                    <div class="card">
+                        <img src={`${process.env.PUBLIC_URL}/assests/project-2.png`} alt="img" />
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora deserunt officia praesentium illo
+                            amet magni cumque id saepe porro beatae!</p>
+                    </div>
+                    <div class="card">
+                        <img src={`${process.env.PUBLIC_URL}/assests/project-3.png`} alt="img" />
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora deserunt officia praesentium illo
+                            amet magni cumque id saepe porro beatae!</p>
+                    </div>
             </div>
             <a href="./projects.html">SEE MORE...</a>
       </section>

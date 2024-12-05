@@ -1,5 +1,6 @@
 // src/components/Footer.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -7,7 +8,9 @@ const Footer = () => {
       <footer>
         <div className="footer-content">
           <div className="footer-logo">
-            <img src="/assests/desktop-header-logo.png" alt="Logo" />
+            <Link to="/home">
+              <img src={`${process.env.PUBLIC_URL}/assests/desktop-header-logo.png`} alt="Logo" />
+            </Link>
           </div>
           <div className="footer-social">
             <h3>Follow Me</h3>

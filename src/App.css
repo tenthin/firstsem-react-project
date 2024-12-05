@@ -7,7 +7,7 @@ body {
   margin: 0;
   position: relative;
   min-height: 100%;
-  padding-bottom: 14rem;
+  padding-bottom: 15rem;
   box-sizing: inherit;
 }
 .container{
@@ -45,7 +45,7 @@ main {
 
 footer {
   background-color: black;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   text-align: center;
   position: absolute;
   right: 0;
@@ -363,6 +363,15 @@ font-size: 25px;
 
 
 @media screen and (max-width:1200px) {
+  header{
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .footer-content{
+    padding-bottom: 0;
+  }
+
   .projectSection{
       grid-template-columns: 1fr 1fr;
   } 
@@ -405,6 +414,10 @@ font-size: 25px;
       grid-template-columns: 1fr;
   } 
 
+  main{
+    margin-bottom: 5rem;
+  }
+
   .footer-content{
     flex-direction: column;
   }
@@ -426,6 +439,7 @@ font-size: 25px;
 
   .contact-message{
     flex-direction: column;
+    margin: 0;
   }
   .contact-message form{
     width: 80vw;

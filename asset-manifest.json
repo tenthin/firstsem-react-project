@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/desn-3035-React-portfolio/static/css/main.958ba172.css",
+    "main.js": "/desn-3035-React-portfolio/static/js/main.5fc00a1c.js",
+    "static/js/453.e5b00392.chunk.js": "/desn-3035-React-portfolio/static/js/453.e5b00392.chunk.js",
+    "index.html": "/desn-3035-React-portfolio/index.html",
+    "main.958ba172.css.map": "/desn-3035-React-portfolio/static/css/main.958ba172.css.map",
+    "main.5fc00a1c.js.map": "/desn-3035-React-portfolio/static/js/main.5fc00a1c.js.map",
+    "453.e5b00392.chunk.js.map": "/desn-3035-React-portfolio/static/js/453.e5b00392.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.958ba172.css",
+    "static/js/main.5fc00a1c.js"
+  ]
+}

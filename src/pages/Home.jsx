@@ -3,6 +3,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+
+    // Function to handle resume download
+    const handleDownload = () => {
+      // Create an invisible anchor element to trigger download
+      const link = document.createElement('a');
+      link.href = `${process.env.PUBLIC_URL}/resume.pdf`; // Path to your resume
+      link.download = 'Tenzin_Thinley_Resume.pdf'; 
+      link.click();
+    };
   return (
     <div className='page-container'>
       <section className="heroPage">
@@ -14,7 +23,7 @@ const Home = () => {
           <p>A Frontend Developer</p>
           <div className="resumeDownload">
             <span>Resume</span>
-            <button>Download</button>
+            <button onClick={handleDownload}>Download</button>
           </div>
         </div>
       </section>

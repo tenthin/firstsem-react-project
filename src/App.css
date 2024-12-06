@@ -207,6 +207,8 @@ display: flex;
 .aboutme-page{
   background-color: #F6EEE3;
   padding: 3rem 0;
+  width: 80%;
+  margin: auto;
 }
 
 .aboutme{

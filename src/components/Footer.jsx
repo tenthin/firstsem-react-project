@@ -15,12 +15,30 @@ const Footer = () => {
           <div className="footer-social">
             <h3>Follow Me</h3>
             <div className="social-icons">
-              <i class="fa-brands fa-square-instagram"></i>
-              {/* <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a> */}
-              <i class="fa-brands fa-linkedin"></i>
-              {/* <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a> */}
-              <i class="fa-brands fa-square-github"></i>
-              {/* <a href="https://www.github.com" target="_blank" rel="noreferrer">GitHub</a> */}
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tenzinthinley01/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/tenthin"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-square-github"></i>
+              </a>
             </div>
           </div>
         </div>

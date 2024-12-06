@@ -1,13 +1,13 @@
 // src/pages/Home.js
 import React from 'react';
-import {ProfileImg} from "../assests/profile.png";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div className='page-container'>
       <section className="heroPage">
         <div className="profileImg">
-          <img src={ProfileImg} alt="My Image" />
+          <img src={`${process.env.PUBLIC_URL}/assests/profile.png`} alt="My Image" />
         </div>
         <div className="myName">
           <h1>Hi, I'm Tenzin Thinley</h1>
@@ -47,7 +47,7 @@ const Home = () => {
                             amet magni cumque id saepe porro beatae!</p>
                     </div>
             </div>
-            <a href="./projects.html">SEE MORE...</a>
+            <Link to="/project">SEE MORE...</Link>
       </section>
     </div>
   );

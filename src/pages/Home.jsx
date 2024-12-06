@@ -1,12 +1,13 @@
 // src/pages/Home.js
 import React from 'react';
+import {ProfileImg} from "../../assests/profile.png";
 
 const Home = () => {
   return (
     <div className='page-container'>
       <section className="heroPage">
         <div className="profileImg">
-          <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="My Image" />
+          <img src={ProfileImg} alt="My Image" />
         </div>
         <div className="myName">
           <h1>Hi, I'm Tenzin Thinley</h1>

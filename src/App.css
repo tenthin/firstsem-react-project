@@ -455,6 +455,7 @@ font-size: 25px;
     width: 80vw;
   }
   .contact-message h3{
+    padding: 0;
     width: 100vw;
   }
 }

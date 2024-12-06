@@ -427,6 +427,9 @@ font-size: 25px;
     padding: 2rem 0;
   }
 
+  .aboutme-page{
+    width: 100%;
+  }
   .projectSection{
       grid-template-columns: 1fr;
   } 

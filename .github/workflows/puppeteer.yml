@@ -1,0 +1,27 @@
+name: name: Puppeteer and Lighthouse
+on:
+  workflow_dispatch:
+
+jobs:
+  run-scripts:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository content
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 3: Run the main.mjs script
+      - name: Run the scripts
+        run: node scripts/main.mjs
+
+      # Step 4: Archive the artifacts
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: script-artifacts
+          path: auto_*

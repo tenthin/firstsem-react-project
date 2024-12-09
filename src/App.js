@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Project from './pages/Project';
 import Contact from './pages/Contact';
+import SingleFile from './pages/SingleFile';
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
           <Route path="/firstsem-react-project" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/project" element={<Project/>} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/project/:id" element={<SingleFile />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

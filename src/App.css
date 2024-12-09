@@ -1,7 +1,8 @@
-html{
+html {
   height: 100%;
   box-sizing: border-box;
 }
+
 body {
   /* font-family: Arial, sans-serif; */
   margin: 0;
@@ -10,10 +11,13 @@ body {
   padding-bottom: 15rem;
   box-sizing: inherit;
 }
-.container{
+
+.container {
   background-color: black;
 }
-header,.footer-content{
+
+header,
+.footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,9 +65,11 @@ footer {
 .footer-logo img {
   /* width: 50px; */
 }
-.footer-social{
+
+.footer-social {
   color: white;
 }
+
 /* .social-icons a {
   margin: 0 10px;
   color: white;
@@ -75,7 +81,8 @@ footer {
   cursor: pointer;
   color: white;
 }
-.footer-bottom p{
+
+.footer-bottom p {
   color: white;
   margin: 0;
 }
@@ -89,57 +96,58 @@ button {
 
 
 /* Home Page*/
-.page-container{
+.page-container {
   width: 80%;
   margin: auto;
 }
 
-.heroPage{
-display: flex;
+.heroPage {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #F6EEE3;
   padding: 2rem;
 }
 
-.heroPage .profileImg, .heroPage .myName{
+.heroPage .profileImg,
+.heroPage .myName {
   flex: 1;
   display: block;
   margin: auto;
   text-align: center;
 }
 
-.profileImg img{
+.profileImg img {
   border-radius: 15%;
 }
 
-.myName h1{
+.myName h1 {
   font-size: 40px;
   margin: 0;
 }
 
-.myName p{
+.myName p {
   font-size: 18px;
 }
 
-.resumeDownload{
+.resumeDownload {
   display: flex;
-  gap:1rem;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
 }
 
-.resumeDownload button{
+.resumeDownload button {
   background-color: black;
   color: #F6EEE3;
 }
 
-.resumeDownload button:hover{
+.resumeDownload button:hover {
   background-color: #F6EEE3;
   color: black;
 }
 
-.homeAboutMe{
+.homeAboutMe {
   background-color: #F6EEE3;
   height: 400px;
   padding: 2rem;
@@ -150,29 +158,211 @@ display: flex;
   justify-content: center;
 }
 
-.homeAboutMe p{
- font-size: 18px;
- width: 80%;
- margin: 0;
- line-height: 1.9rem
+.homeAboutMe p {
+  font-size: 18px;
+  width: 80%;
+  margin: 0;
+  line-height: 1.9rem
 }
 
-.homeProject{
+.homeProject {
   background-color: #F6EEE3;
   margin-top: 4rem;
-    padding: 2rem;
+  padding: 2rem;
 }
 
-.homeProject h2{
+.homeProject h2 {
   font-size: 35px;
   margin: 0;
 }
+
 .projectSection {
   display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    /* margin-bottom: 8rem; */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  /* margin-bottom: 8rem; */
   margin-top: 2rem;
+}
+
+.card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card img {
+  flex: 3;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card p {
+  margin: 1rem 1rem;
+  /* flex:1 */
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* About me Page*/
+.aboutme-page {
+  background-color: #F6EEE3;
+  padding: 3rem 0;
+  width: 80%;
+  margin: auto;
+}
+
+.aboutme {
+  width: 80%;
+  margin: auto;
+}
+
+.aboutme h2 {
+  font-size: 35px;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.aboutme h3 {
+  margin-bottom: 0;
+}
+
+.aboutme p {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.aboutme ul li {
+  font-size: 18px;
+}
+
+/* Contact Page */
+.contact h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.contact p {
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contact-address {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.contact-address section {
+  background-color: #F6EEE3;
+  width: 30%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  border-bottom: 2px solid black;
+}
+
+.contact-address section:hover {
+  border-bottom: 2px solid red;
+}
+
+.contact-address section i {
+  font-size: 2rem;
+}
+
+.contact-message {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8rem;
+  width: 100%;
+  /* Ensure it takes up the full width */
+}
+
+.contact-message h3 {
+  font-size: 2rem;
+  width: 500px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.contact-message form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.contact-message form input,
+.contact-message form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-message form input[type="email"],
+.contact-message form input[type="text"],
+.contact-message form textarea {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.contact-message form textarea {
+  height: 100px;
+  resize: vertical;
+  /* Allow user to resize textarea vertically */
+}
+
+.contact-message form button {
+  padding: 10px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-message form button:hover {
+  background-color: rgb(157, 153, 153);
+}
+
+
+/* Project Page */
+/* .projects{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 8rem;
+} */
+
+.project-page h2 {
+  font-size: 35px;
+}
+
+.projectSection .card a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Ensures the link text inherits the color of its parent */
 }
 
 .card{
@@ -203,269 +393,140 @@ display: flex;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* About me Page*/
-.aboutme-page{
-  background-color: #F6EEE3;
-  padding: 3rem 0;
+/* SingleFile Page */
+.singlefile-container {
   width: 80%;
   margin: auto;
 }
-
-.aboutme{
+.singlefile-page{
+  text-align: center;
   width: 80%;
   margin: auto;
-}
-
-.aboutme h2{
-  font-size: 35px;
-  margin-top: 1rem;
-  margin-bottom: 0;
-}
-
-.aboutme h3{
-  margin-bottom: 0;
-}
-
-.aboutme p{
-  margin-bottom: 0;
-  font-size: 18px;
-}
-
-.aboutme  ul li{
-  font-size: 18px;
-}
-/* Contact Page */
-.contact h2{
-  font-size: 35px;
-  text-align: center;
-}
-
-.contact p{
-margin: 0;
-text-align: center;
-font-size: 25px;
-}
-
-.contact-address{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  margin-top: 4rem;
-}
-
-.contact-address section{
   background-color: #F6EEE3;
-  width: 30%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  cursor: pointer;
-  border-bottom: 2px solid black;
+  padding: 2rem;
 }
 
-.contact-address section:hover{
-  border-bottom: 2px solid red;
-}
-
-.contact-address section i{
-  font-size: 2rem;
-}
-
-.contact-message {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 8rem;
-  width: 100%; /* Ensure it takes up the full width */
-}
-
-.contact-message h3 {
-  font-size: 2rem;
-  width: 500px; 
-  height: 80px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-.contact-message form {
-  display: flex;
-  flex-direction: column;
-  width: 500px; 
-  border: 1px solid #ccc; 
-  padding: 10px; 
-}
-
-.contact-message form input,
-.contact-message form textarea {
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 100%; 
-  box-sizing: border-box;
-}
-
-.contact-message form input[type="email"],
-.contact-message form input[type="text"],
-.contact-message form textarea {
-  height: 40px; 
-  margin-bottom: 15px; 
-}
-
-.contact-message form textarea {
-  height: 100px; 
-  resize: vertical; /* Allow user to resize textarea vertically */
-}
-
-.contact-message form button {
-  padding: 10px;
-  width: 100%;
-  background-color: black; 
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.contact-message form button:hover {
-  background-color: rgb(157, 153, 153);
-}
-
-
-/* Project Page */
-/* .projects{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 8rem;
-} */
-
-.project-page h2{
+.singlefile-page h2{
   font-size: 35px;
 }
 
-.card{
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  border-radius: 10px;
+.singlefile-text{
+  width: 55%;
+  margin: 3rem auto 0;
 }
 
-.card img{
-  flex:3;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
+.singlefile-text p{
+  font-size: 18px;
+  text-align: center;
+  
 }
-
-.card p{
-  margin: 1rem 1rem;
-  /* flex:1 */
-}
-
-.card:hover{
-  /* transform: scale(1.1); */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-
-
-
 @media screen and (max-width:1200px) {
-  header{
+  header {
     flex-direction: column;
     padding-bottom: 0;
   }
 
-  .footer-content{
+  .footer-content {
     padding-bottom: 0;
   }
 
-  .projectSection{
-      grid-template-columns: 1fr 1fr;
-  } 
+  .projectSection {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 
 @media screen and (max-width:480px) {
-  .heroPage{
+  .heroPage {
     flex-direction: column;
   }
 
-  .profileImg img{
+  .profileImg img {
     display: flex;
     margin: auto;
-    width: 100%;         /* Adjust the image width to 90% of its container */
-    height: auto;  
+    width: 100%;
+    /* Adjust the image width to 90% of its container */
+    height: auto;
   }
 
-  .myName h1{
+  .myName h1 {
     font-size: 30px;
     margin-top: 2rem;
   }
-  
-  .myName p{
+
+  .myName p {
     margin-top: 0.5rem;
     margin-bottom: 0;
     /* font-size: 18px; */
   }
 
-  .resumeDownload{
+  .resumeDownload {
     margin-top: 0.5rem;
   }
 
-  .homeAboutMe{
+  .homeAboutMe {
     height: 100%;
     padding: 2rem 0;
   }
 
-  .aboutme-page{
+  .aboutme-page {
     width: 100%;
   }
-  .projectSection{
-      grid-template-columns: 1fr;
-  } 
 
-  main{
+  .projectSection {
+    grid-template-columns: 1fr;
+  }
+
+  main {
     margin-bottom: 5rem;
   }
 
-  .footer-content{
+  .footer-content {
     flex-direction: column;
   }
 
-  .footer-bottom{
+  .footer-bottom {
     margin-top: 2rem;
   }
 
 
   /* ContactP Page */
-  .contact-address{
+  .contact-address {
     flex-direction: column;
     gap: 4rem;
   }
 
-  .contact-address section{
+  .contact-address section {
     width: 100%;
   }
 
-  .contact-message{
+  .contact-message {
     flex-direction: column;
     margin: 0;
   }
-  .contact-message form{
+
+  .contact-message form {
     width: 80vw;
   }
-  .contact-message h3{
+
+  .contact-message h3 {
     padding: 0;
     width: 100vw;
+  }
+
+  .singlefile-page{
+    padding: 1rem;
+    width: 90%;
+  }
+  .singlefile-page img{
+    width: 100%;
+  }
+  .singlefile-text{
+    width: 100%;
+    margin: 0;
+  }
+
+  .singlefile-page p{
+    text-align: start;
   }
 }

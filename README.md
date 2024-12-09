@@ -47,8 +47,8 @@ This will launch the app in your browser, typically at http://localhost:3000. An
 To make changes to your portfolio, modify the components and pages in the `src` folder:
 
 - **App.js**: The main component where the app routes are defined.
-- **Pages/Directory**: Contains the different pages of your portfolio such as `Home.js`, `About.js`, `Projects.js`, etc.
-- **Components/Directory**: Reusable components such as headers, footers, project cards, etc.
+- **Page**: Contains the different pages of your portfolio such as `Home.js`, `About.js`, `Projects.js`, etc.
+- **Components**: Reusable components such as headers, footers, etc.
 
 After making changes, you can see the updates by running `npm start`.
 
@@ -56,7 +56,7 @@ After making changes, you can see the updates by running `npm start`.
 
 npm run build
 
-This will create an optimized production build in the build/ folder, ready for deployment.
+This will create an optimized production build in the build folder, ready for deployment.
 
 ## Deployment to GitHub Pages
 

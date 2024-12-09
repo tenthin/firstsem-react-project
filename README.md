@@ -82,7 +82,7 @@ This command does the following:
 
 **Note**: Ensure you have correctly configured the `homepage` field in your `package.json` to point to the GitHub Pages URL (e.g., `https://your-username.github.io/portfolio-website/`).
 
-## Contributing
+## Contributing 
 
 Feel free to contribute to the project by forking this repository and submitting a pull request. If you'd like to report an issue or suggest new features, open an issue under the Issues tab.
 

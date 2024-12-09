@@ -1,4 +1,7 @@
 # Portfolio Website - React JS
+![Puppeteer Workflow Status](https://github.com/tenthin/firstsem-react-project/actions/workflows/puppeteer.yml/badge.svg)
+
+This is a sample React project with Puppeteer and Lighthouse automation.
 
 Welcome to my Portfolio Website repository! This project was built using **React.js** and **React Router** to create a dynamic, responsive portfolio website where I showcase my skills, projects, and contact information.
 

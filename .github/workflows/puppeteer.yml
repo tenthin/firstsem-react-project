@@ -1,7 +1,10 @@
 name: Puppeteer and Lighthouse
 
 on:
-  workflow_dispatch:  # This makes the workflow manually triggerable from the GitHub UI
+  workflow_run:
+  workflows: ["pages-build-deployment"]
+  types:
+    - completed
 
 jobs:
   run-scripts:

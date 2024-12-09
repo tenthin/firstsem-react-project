@@ -31,6 +31,7 @@ git clone https://github.com/tenthin/firstsem-react-project.git
 
 cd portfolio-website
 npm install
+npm install puppeteer lighthouse
 
 This will install all the necessary packages defined in package.json.
 

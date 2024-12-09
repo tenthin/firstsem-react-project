@@ -1,6 +1,7 @@
-name: name: Puppeteer and Lighthouse
+name: Puppeteer and Lighthouse
+
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # This makes the workflow manually triggerable from the GitHub UI
 
 jobs:
   run-scripts:
@@ -12,10 +13,10 @@ jobs:
         uses: actions/checkout@v4
 
       # Step 2: Install dependencies
-      - name: Install dependencies
+      - name: Install npm dependencies
         run: npm install
 
-      # Step 3: Run the main.mjs script
+      # Step 3: Run the scripts
       - name: Run the scripts
         run: node scripts/main.mjs
 
@@ -24,4 +25,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: script-artifacts
-          path: auto_*
+          path: auto_*  # Ensure the path matches where the artifacts are stored

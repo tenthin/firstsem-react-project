@@ -8,8 +8,9 @@ const Footer = () => {
       <footer>
         <div className="footer-content">
           <div className="footer-logo">
-            <Link to="/home">
-              <img src={`${process.env.PUBLIC_URL}/assests/desktop-header-logo.png`} alt="Logo" />
+            <Link className='logo' to="/home">
+              {/* <img src={`${process.env.PUBLIC_URL}/assests/desktop-header-logo.png`} alt="Logo" /> */}
+              tenzin
             </Link>
           </div>
           <div className="footer-social">

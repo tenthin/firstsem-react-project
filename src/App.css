@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  /* font-family: Arial, sans-serif; */
+  font-family: sans-serif;
   margin: 0;
   position: relative;
   min-height: 100%;
@@ -21,13 +21,25 @@ header,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
   margin: auto;
   padding: 2rem;
 }
 
-.header-logo img {
+.logo {
   /* width: 100px; */
+  color: white;
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+ text-decoration: none;
+ font-size: 3.5rem;
+ transition: color 0.5s ease;
+ border: none;
+}
+
+.logo:hover{
+  color: rgba(165, 162, 162, 0.688);
+  border-bottom: rgba(165, 162, 162, 0.688) 2px solid;
 }
 
 nav ul {
@@ -41,11 +53,13 @@ nav ul li a {
   text-decoration: none;
   color: white;
   padding: 10px;
+  transition: color 0.5s ease;
 }
 
 nav ul li a:hover {
-  background-color: white;
-  color: black;
+  /* background-color: white; */
+  border-bottom: rgb(165, 162, 162) 2px solid;
+  color: rgb(165, 162, 162);
 }
 
 main {
@@ -54,7 +68,6 @@ main {
 
 footer {
   background-color: black;
-  /* margin-top: 4rem; */
   text-align: center;
   position: absolute;
   right: 0;
@@ -62,18 +75,9 @@ footer {
   bottom: 0;
 }
 
-.footer-logo img {
-  /* width: 50px; */
-}
-
 .footer-social {
   color: white;
 }
-
-/* .social-icons a {
-  margin: 0 10px;
-  color: white;
-} */
 
 .social-icons i {
   font-size: 2rem;
@@ -87,17 +91,9 @@ footer {
   margin: 0;
 }
 
-button {
-  background-color: #F6EEE3;
-  border: 1px solid black;
-  padding: 10px;
-  cursor: pointer;
-}
-
-
 /* Home Page*/
 .page-container {
-  width: 80%;
+  /* width: 80%; */
   margin: auto;
 }
 
@@ -105,8 +101,10 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #F6EEE3;
-  padding: 2rem;
+  /* background-color: #F6EEE3; */
+  background-color: black;
+  color: white;
+  padding:2rem;
 }
 
 .heroPage .profileImg,
@@ -118,11 +116,12 @@ button {
 }
 
 .profileImg img {
-  border-radius: 15%;
+  border: #ecb81d 5px solid;
+  width: 50%;
 }
 
 .myName h1 {
-  font-size: 40px;
+  font-size: 4rem;
   margin: 0;
 }
 
@@ -138,20 +137,31 @@ button {
 }
 
 .resumeDownload button {
-  background-color: black;
+  border: #fff 2px solid;
+  background-color: transparent;
   color: #F6EEE3;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  /* transition: transform 0.5s ease; */
 }
 
 .resumeDownload button:hover {
-  background-color: #F6EEE3;
-  color: black;
+  color: rgb(165, 162, 162);
+  /* transform: scale(1.1); */
+}
+
+.aboutmee{
+  width: 60%;
+  margin: 4rem auto 8rem;
+  padding: 2rem;
+} 
+
+.aboutmee h1{
+  font-size: 4rem;
 }
 
 .homeAboutMe {
-  background-color: #F6EEE3;
-  height: 400px;
-  padding: 2rem;
-  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,28 +170,39 @@ button {
 
 .homeAboutMe p {
   font-size: 18px;
-  width: 80%;
+  width: 100%;
   margin: 0;
   line-height: 1.9rem
 }
 
 .homeProject {
-  background-color: #F6EEE3;
-  margin-top: 4rem;
-  padding: 2rem;
+  /* background-color: #F6EEE3; */
+  /* padding: 2rem; */
+  width: 60%;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column; 
 }
 
-.homeProject h2 {
-  font-size: 35px;
-  margin: 0;
+.homeProject h1 {
+  font-size: 4rem;
+  /* margin: 0; */
 }
 
 .projectSection {
+  /* margin-bottom: 8rem; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  /* margin-bottom: 8rem; */
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+}
+
+.homeProject .link{
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+  align-self: flex-end;
+  margin-top: 1rem;
 }
 
 .card {
@@ -204,7 +225,6 @@ button {
 
 .card p {
   margin: 1rem 1rem;
-  /* flex:1 */
 }
 
 .card:hover {

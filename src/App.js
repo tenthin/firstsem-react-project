@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <main>
+      {/* <main> */}
         <Routes>
           <Route path="/firstsem-react-project" element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="/project/:id" element={<SingleFile />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </main>
+      {/* </main> */}
       <Footer />
     </Router>
   );

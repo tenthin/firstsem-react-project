@@ -7,16 +7,17 @@ const Header = () => {
     <div className='container'>
       <header>
         <div className="header-logo">
-          <Link to="/home">
-            <img src={`${process.env.PUBLIC_URL}/assests/desktop-header-logo.png`} alt="Logo" />
+          <Link to="/home" className='logo'>
+            {/* <img src={`${process.env.PUBLIC_URL}/assests/desktop-header-logo.png`} alt="Logo" /> */}
+            tenzin
           </Link>
         </div>
         <nav>
           <ul>
-            <li><Link to="/home">Home</Link></li>
-            <li><Link to="/about">About Me</Link></li>
-            <li><Link to="/project">Project</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/home">HOME</Link></li>
+            <li><Link to="/about">ABOUT ME</Link></li>
+            <li><Link to="/project">PROJECT</Link></li>
+            <li><Link to="/contact">CONTACT</Link></li>
           </ul>
         </nav>
       </header>

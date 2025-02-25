@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/firstsem-react-project" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          {/* <Route path="/about" element={<About />} /> */}
           <Route path="/project" element={<Project />} />
           <Route path="/project/:id" element={<SingleFile />} />
           <Route path="/contact" element={<Contact />} />

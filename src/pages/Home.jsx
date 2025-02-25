@@ -12,6 +12,7 @@ const Home = () => {
     link.download = 'Tenzin_Thinley_Resume.pdf';
     link.click();
   };
+
   return (
     <div className='page-container'>
       <section className="heroPage">
@@ -19,7 +20,7 @@ const Home = () => {
           <img src={`${process.env.PUBLIC_URL}/assests/profile2.jpg`} alt="My Image" />
         </div>
         <div className="myName">
-          <h1>Hi, I'm Tenzin Thinley</h1>
+          <h1>I'm Tenzin Thinley</h1>
           <p>FRONTEND DEVELOPER</p>
           <div className="resumeDownload">
             <span>RESUME</span>
@@ -44,22 +45,24 @@ const Home = () => {
         <h1>PROJECT</h1>
         <div className="projectSection">
           <div class="card">
-            <img src={`${process.env.PUBLIC_URL}/assests/project-1.png`} alt="img" />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora deserunt officia praesentium illo
-              amet magni cumque id saepe porro beatae!</p>
+            <img src={`${process.env.PUBLIC_URL}/assests/Review.png`} alt="img" />
+            <h3>Interactive Rating Component</h3>
+            <p>This project is a simple yet interactive rating component built using HTML, CSS, and JavaScript.
+              The primary function is to allow users to provide feedback by selecting...</p>
           </div>
           <div class="card">
-            <img src={`${process.env.PUBLIC_URL}/assests/project-2.png`} alt="img" />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora deserunt officia praesentium illo
-              amet magni cumque id saepe porro beatae!</p>
+            <img src={`${process.env.PUBLIC_URL}/assests/WatchApp.png`} alt="img" />
+            <h3>LifeLink – Smartwatch Emotional Well-being Tracker</h3>
+            <p>LifeLink is a smartwatch application designed to monitor users' emotions
+              and provide personalized recommendations to enhance their well-being</p>
           </div>
           <div class="card">
-            <img src={`${process.env.PUBLIC_URL}/assests/project-3.png`} alt="img" />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora deserunt officia praesentium illo
-              amet magni cumque id saepe porro beatae!</p>
+            <img src={`${process.env.PUBLIC_URL}/assests/Blog.png`} alt="img" />
+            <h3>Blogger – Minimalist Blog Homepage</h3>
+            <p>Blogger is a clean and modern blog homepage designed to showcase articles in a structured and visually appealing layout.</p>
           </div>
         </div>
-        <Link  className='link' to="/project">CLICK HERE...</Link>
+        <Link className='link' to="/project">CLICK FOR HERE...</Link>
       </section>
     </div>
   );

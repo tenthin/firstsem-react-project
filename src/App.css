@@ -116,10 +116,14 @@ footer {
 }
 
 .profileImg img {
-  border: #ecb81d 5px solid;
+  border: #ecb81d 2px solid;
   width: 50%;
 }
 
+.myName{
+  border: #ecb81d 2px solid;
+  padding: 4rem 0;
+}
 .myName h1 {
   font-size: 4rem;
   margin: 0;
@@ -127,6 +131,8 @@ footer {
 
 .myName p {
   font-size: 18px;
+  color:#ecb81d;
+  margin: 0 0 1rem;
 }
 
 .resumeDownload {
@@ -155,6 +161,7 @@ footer {
   width: 60%;
   margin: 4rem auto 8rem;
   padding: 2rem;
+  border: black 2px solid;
 } 
 
 .aboutmee h1{
@@ -177,11 +184,12 @@ footer {
 
 .homeProject {
   /* background-color: #F6EEE3; */
-  /* padding: 2rem; */
+  padding: 2rem;
   width: 60%;
   margin: 4rem auto;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  border: black 2px solid;
 }
 
 .homeProject h1 {
@@ -223,6 +231,10 @@ footer {
   border-radius: 10px 10px 0 0;
 }
 
+.card h3{
+  margin: 3px 0 0;
+  text-align: center;
+}
 .card p {
   margin: 1rem 1rem;
 }
@@ -369,15 +381,13 @@ footer {
 
 
 /* Project Page */
-/* .projects{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 8rem;
-} */
+.project-page{
+  width: 60%;
+  margin: auto;
+}
 
-.project-page h2 {
-  font-size: 35px;
+.project-page h1 {
+  font-size: 4rem;
 }
 
 .projectSection .card a {
@@ -396,13 +406,6 @@ footer {
   border-radius: 10px;
 }
 
-.card img{
-  flex:3;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-
 .card p{
   margin: 1rem 1rem;
   /* flex:1 */
@@ -415,29 +418,38 @@ footer {
 
 /* SingleFile Page */
 .singlefile-container {
-  width: 80%;
-  margin: auto;
+  margin: 4rem auto 8rem;
+  /* width: 60%; */
+  /* margin: auto; */
+  /* padding: 2rem; */
+  
 }
 .singlefile-page{
   text-align: center;
-  width: 80%;
+  border: black 2px solid;
+  width: 60%;
   margin: auto;
-  background-color: #F6EEE3;
+  /* background-color: #F6EEE3; */
   padding: 2rem;
 }
 
 .singlefile-page h2{
   font-size: 35px;
 }
+.singlefile-page img{
+  width: 100%;
+  border: black 2px solid;
+  border-radius: 10px;
+}
 
 .singlefile-text{
-  width: 55%;
+  /* width: 55%; */
   margin: 3rem auto 0;
 }
 
 .singlefile-text p{
-  font-size: 18px;
-  text-align: center;
+  font-size: 1.1rem;
+  /* text-align: center; */
   
 }
 @media screen and (max-width:1200px) {

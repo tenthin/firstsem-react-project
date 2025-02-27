@@ -277,15 +277,16 @@ footer {
 }
 
 /* Contact Page */
-.contact h2 {
-  font-size: 35px;
+
+.contact h1 {
+  font-size: 4rem;
   text-align: center;
 }
 
 .contact p {
   margin: 0;
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .contact-address {
@@ -297,18 +298,18 @@ footer {
 }
 
 .contact-address section {
-  background-color: #F6EEE3;
-  width: 30%;
+  /* background-color: #F6EEE3; */
+  width: 20%;
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
-  border-bottom: 2px solid black;
+  border: 3px solid rgb(0, 0, 0);
 }
 
 .contact-address section:hover {
-  border-bottom: 2px solid red;
+  border: 3px solid #CEA119;
 }
 
 .contact-address section i {
@@ -319,17 +320,17 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 8rem;
-  width: 100%;
+  margin: 4rem auto 0;
+  width: 90%;
   /* Ensure it takes up the full width */
 }
 
 .contact-message h3 {
   font-size: 2rem;
-  width: 500px;
+  /* width: 500px; */
   height: 80px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   text-align: center;
   border: 1px solid #ccc;

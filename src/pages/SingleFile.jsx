@@ -17,6 +17,7 @@ const SingleFile = () => {
             Upon submission, the interface dynamically updates to display a "Thank You" message, acknowledging the user's input.`,
             languages: 'HTML, CSS, JavaScript',
             link: 'https://frontendmentor-rating-system.netlify.app/',
+            github:'https://github.com/tenthin/frontendmentor-rating-component',
             createdAt: 'January 2023'
         },
         2: {
@@ -33,6 +34,7 @@ const SingleFile = () => {
             description: `Blogger is a clean and modern blog homepage designed to showcase articles in a structured and visually appealing layout. The project focuses on simplicity, readability, and responsiveness, making it a great platform for content presentation.`,
             languages: 'HTML, CSS, JavaScript, React',
             link: 'https://frontendmentor-blogger.netlify.app/',
+            github:'https://github.com/tenthin/frontendmentor-blogger',
             createdAt: 'March 2023'
         },
         // 4: {
@@ -105,6 +107,7 @@ const SingleFile = () => {
                     <p><strong>Project Overview:</strong> {project.description}</p>
                     <p><strong>Tools Used:</strong> {project.languages}</p>
                     <p><strong>Launched Date:</strong> {project.createdAt}</p>
+                    <p><strong>Github Link:</strong> <a href={project.github} target="_blank" rel="noopener noreferrer">{project.github}</a></p>
                     <p><strong>Check out live project:</strong> <a href={project.link} target="_blank" rel="noopener noreferrer">{project.link}</a></p>
                 </div>
             </section>

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/firstsem-react-project/static/css/main.c81e4e64.css",
-    "main.js": "/firstsem-react-project/static/js/main.03dcca9c.js",
+    "main.js": "/firstsem-react-project/static/js/main.4d3d565b.js",
     "static/js/453.e5b00392.chunk.js": "/firstsem-react-project/static/js/453.e5b00392.chunk.js",
     "index.html": "/firstsem-react-project/index.html",
     "main.c81e4e64.css.map": "/firstsem-react-project/static/css/main.c81e4e64.css.map",
-    "main.03dcca9c.js.map": "/firstsem-react-project/static/js/main.03dcca9c.js.map",
+    "main.4d3d565b.js.map": "/firstsem-react-project/static/js/main.4d3d565b.js.map",
     "453.e5b00392.chunk.js.map": "/firstsem-react-project/static/js/453.e5b00392.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c81e4e64.css",
-    "static/js/main.03dcca9c.js"
+    "static/js/main.4d3d565b.js"
   ]
 }

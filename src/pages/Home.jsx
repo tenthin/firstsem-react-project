@@ -1,6 +1,11 @@
 // src/pages/Home.js
-import React from 'react';
+import {React, useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
+
+
+
 
 const Home = () => {
 
@@ -12,14 +17,19 @@ const Home = () => {
     link.download = 'Tenzin_Thinley_Resume.pdf';
     link.click();
   };
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: false,     // animate only once
+    });
+  }, []);
   return (
     <div className='page-container'>
       <section className="heroPage">
-        <div className="profileImg">
+        <div className="profileImg" data-aos="fade-right">
           <img src={`${process.env.PUBLIC_URL}/assests/profile2.jpg`} alt="My Image" />
         </div>
-        <div className="myName">
+        <div className="myName" data-aos="fade-right">
           <h1>I'm Tenzin Thinley</h1>
           <p>FRONTEND DEVELOPER</p>
           <div className="resumeDownload">
@@ -29,7 +39,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className='aboutmee'>
+      <div className='aboutmee' data-aos="fade-up-right">
         <h1>ABOUT ME</h1>
         <section className="homeAboutMe">
           <p>I’m a <b>Frontend and UI/UX Developer</b> with a master’s degree in physics.</p>
@@ -41,7 +51,7 @@ const Home = () => {
         </section>
       </div>
 
-      <section className="homeProject">
+      <section className="homeProject" data-aos="fade-up-right">
         <h1>PROJECT</h1>
         <div className="projectSection">
           <div class="card">
